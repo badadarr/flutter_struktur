@@ -1,0 +1,1 @@
+Folder binding berisi class class binding yang bertugas untuk memasukkan dependency yang dibutuhkan view.

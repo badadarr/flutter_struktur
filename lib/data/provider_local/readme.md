@@ -1,0 +1,1 @@
+Class ini berisi class class provider yang berinteraksi langsung dengan penyimpanan local untuk mendapatkan data. Provider akan meminta data dari penyimpanan lokal lalu megolahnya agar siap digunakan.

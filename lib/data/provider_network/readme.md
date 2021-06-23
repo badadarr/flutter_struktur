@@ -1,0 +1,1 @@
+Class ini berisin class class provider yang berinteraksi langsung dengan data yang diluar.

@@ -1,0 +1,1 @@
+Class ini berisi class class repository yang bertugas menyaluri VIewModel untuk mendapatkan data dari provider. repository hanya mengoper data uang sudah diolah provider intuk VIewmodel.

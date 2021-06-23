@@ -1,0 +1,1 @@
+View : Class yang bertanggung jawab memberikan dan mengatur tampilan sebuah page kepada user, view mendapatkan data yang dibutuhkan dari ViewModel
