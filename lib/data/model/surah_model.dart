@@ -1,4 +1,8 @@
 class SurahModel {
   final String name, nameArabic;
-  SurahModel({required this.name, required this.nameArabic});
+  final int numberOfAyahs;
+  SurahModel(
+      {required this.name,
+      required this.nameArabic,
+      required this.numberOfAyahs});
 }

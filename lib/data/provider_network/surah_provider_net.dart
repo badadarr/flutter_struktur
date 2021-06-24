@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 class SurahProviderNet {
   final String surahBaseUrl = "${AppConfig.baseNetworkUrl}/surah";
 
-  Future<List<SurahModel>> getALlSurah() async {
+  Future<List<SurahModel>> getAllSurah() async {
     List<SurahModel> list = [];
 
     // Mengambil data dari internet
@@ -17,6 +17,16 @@ class SurahProviderNet {
     if (response.statusCode == 200) {
       // Response berhasil, kita ambil datanya
       Map<String, dynamic> result = jsonDecode(response.body);
+
+      // Dapatkan list surat
+      List<dynamic> surah = result['data'];
+      surah.forEach((surah) {
+        // masukeun data ke list surah
+        list.add(SurahModel(
+            name: (surah['englishName'] as String),
+            nameArabic: surah['name'],
+            numberOfAyahs: surah['numberOfAyahs']));
+      });
     }
 
     return list;

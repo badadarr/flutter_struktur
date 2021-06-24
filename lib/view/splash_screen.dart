@@ -10,7 +10,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 1), () {
       // Kode yang mau didelay
       Navigator.pushReplacementNamed(context, RoutesName.home);
     });
