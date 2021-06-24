@@ -37,7 +37,7 @@ box.read('key);
 ```
 
 ## Mudah dalam mendapatkan data bahasa internasional
-```
+```dart
 Text("Hello, World".id);
 
 Get.changeLocale(Locale('id'));
